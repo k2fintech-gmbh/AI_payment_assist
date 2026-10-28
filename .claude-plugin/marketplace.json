@@ -1,0 +1,14 @@
+{
+  "name": "payment-assist-marketplace",
+  "description": "Payment Assist",
+  "owner": {
+    "name": "BlackCatCard Team"
+  },
+  "plugins": [
+    {
+      "name": "payment-assist",
+      "source": "./payment-assist",
+      "description": "Pre-check a planned bank transfer before sending it: open-source sanctions and country checks, IBAN/BIC validation, documents, scam warnings."
+    }
+  ]
+}

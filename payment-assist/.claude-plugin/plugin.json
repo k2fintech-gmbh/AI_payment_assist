@@ -1,0 +1,19 @@
+{
+  "name": "payment-assist",
+  "version": "0.1.0",
+  "description": "Pre-check a planned bank transfer (SEPA or SWIFT) before sending it: open-source sanctions and country checks, IBAN/BIC validation, required documents, scam warnings and practical tips. Advisory only; does not execute payments.",
+  "author": {
+    "name": "BlackCatCard Team"
+  },
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "aml",
+    "payments",
+    "sepa",
+    "swift",
+    "sanctions",
+    "fraud-prevention",
+    "compliance",
+    "eu"
+  ]
+}

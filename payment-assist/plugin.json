@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "payment-assist",
+  "version": "0.1.0",
+  "description": "Pre-check a planned bank transfer (SEPA or SWIFT) before sending it: open-source sanctions and country checks, IBAN/BIC validation, required documents, scam warnings and practical tips. Advisory only; does not execute payments.",
+  "author": {
+    "name": "BlackCatCard Team"
+  },
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "aml",
+    "payments",
+    "sepa",
+    "swift",
+    "sanctions",
+    "fraud-prevention",
+    "compliance",
+    "eu"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Payment Assist",
+        "shortDescription": "Check a planned bank transfer before you send it",
+        "longDescription": "Describe the transfer you plan to make: to whom, where and how. The assistant checks the recipient and the countries involved against public sanctions and high-risk lists, validates the IBAN/BIC, explains which supporting documents a bank is likely to ask for, flags common scam patterns and suggests how to make the payment smoothly. It relies only on open sources, does not execute or initiate payments, does not make AML or legal determinations, and the final decision always rests with your bank.",
+        "developerName": "BlackCatCard Team",
+        "category": "Productivity",
+        "capabilities": ["Read"],
+        "websiteURL": "https://payment-assist.iambig.ai",
+        "privacyPolicyURL": "https://payment-assist.iambig.ai/privacy",
+        "termsOfServiceURL": "https://payment-assist.iambig.ai/terms",
+        "defaultPrompt": [
+          "I want to send 12,000 EUR to a supplier in Turkey for equipment. What should I check and prepare?",
+          "Is this IBAN valid and which bank does it belong to?",
+          "Someone I met online asks me to transfer money for a crypto investment. Is it safe?",
+          "Which documents will my bank need for a SWIFT payment to the UAE?"
+        ]
+      }
+    }
+  }
+}

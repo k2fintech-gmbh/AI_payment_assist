@@ -1,0 +1,20 @@
+{
+  "name": "payment-assist-marketplace",
+  "interface": {
+    "displayName": "Payment Assist"
+  },
+  "plugins": [
+    {
+      "name": "payment-assist",
+      "source": {
+        "source": "local",
+        "path": "./payment-assist"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
